@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/clear.css" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../base/layer-v3.1.1/layer/layer.js"></script>
+    <script src="../js/paging.js"></script>
+    <script src="../js/template.js"></script>
+    <script src="../js/test.js"></script>
+    <style>
+        p {
+            line-height: 2; /* 设置行间距为1.5倍字体大小 */
+        }
+    </style>
+    <title></title>
+</head>
+<body>
+<div class="Box">
+    <div class="TopBar fontYahei">
+        <div class="TopNav clearfix">
+            <ul class="clearfix Nav pull-left">
+                <li><a onclick="redirect('function.html')">网站首页</a></li>
+            </ul>
+            <div class="pull-right">
+                <a href="../index.html"><span>注销</span></a>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="Brand">
+            首页／考试
+        </div>
+    </div>
+    <form action="saveGrade" >
+
+        <div class="clearfix"></div>
+        <div class="centerBox container-fluid clearfix">
+            <div class="ta-bigDiv">
+                <div class="ta-studentInfo clearfix">
+                    <p><a style="font-weight: bold;color: #0f0f0f">姓名：</a><span class="ta-xuehao" id="userName"><!--123456--></span></p>
+                    <p id="div_userOffice"><a style="font-weight: bold;color: #0f0f0f">科室：</a><span class="ta-xuehao" id="userOffice"><!--考试练习--></span></p>
+                </div><br><br>
+
+                <a style="font-weight: bold;font-size: 20px">一、单选题</a>
+
+                <form>
+                    <div class="ta-testList">
+                        <div class="ta-titleDiv clearfix">
+                            <p>1、中央八项规定于（  ）正式出台。<br>
+                                <span class="ta-trueKeyblank"></span></p>
+                            <!--<p class="colorRed">正确答案：工农革命</p>-->
+                        </div>
+                        <div class="ta-optionDiv row">
+                            <div class="col-xs-3">
+                                <input type="radio" value="a" name="question1"><span>A.&nbsp;2012年12月4日</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <input type="radio" value="b" name="question1" ><span>B.&nbsp;2013年1月1日</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <input type="radio" value="c" name="question1"><span>C.&nbsp;2013年3月5日</span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <form>
+                    <div class="ta-testList">
+                        <div class="ta-titleDiv clearfix">
+                            <p>2、以下不属于中央八项规定内容的是（  ）。<span class="ta-trueKeyblank"></span></p>
+                            <!--<p class="colorRed">正确答案：工农革命</p>-->
+                        </div>
+                        <div class="ta-optionDiv row">
+                            <div class="col-xs-3">
+                                <input type="radio" value="a" name="question2"><span>A.&nbsp;改进调查研究</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <input type="radio" value="b" name="question2"><span>B.&nbsp;精简会议活动</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <input type="radio" value="c" name="question2"><span>C.&nbsp;严格控制新建政府性楼堂馆所</span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <form>
+                    <div class="ta-testList">
+                        <div class="ta-titleDiv clearfix">
+                            <p>3、公务接待中，禁止使用（  ）。<span class="ta-trueKeyblank"></span></p>
+                            <!--<p class="colorRed">正确答案：工农革命</p>-->
+                        </div>
+                        <div class="ta-optionDiv row">
+                            <div class="col-xs-3">
+                                <input type="radio" value="a" name="question3"><span>A.&nbsp;工作餐</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <input type="radio" value="b" name="question3"><span>B.&nbsp;本地家常菜</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <input type="radio" value="c" name="question3"><span>C.&nbsp;高档酒水、香烟</span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <form>
+                    <div class="ta-testList">
+                        <div class="ta-titleDiv clearfix">
+                            <p>4、党员干部不得违规接受管理服务对象的（  ）。<span class="ta-trueKeyblank"></span></p>
+                            <!--<p class="colorRed">正确答案：工农革命</p>-->
+                        </div>
+                        <div class="ta-optionDiv row">
+                            <div class="col-xs-3">
+                                <input type="radio" value="a" name="question4"><span>A.&nbsp;普通茶叶伴手礼</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <input type="radio" value="b" name="question4"><span>B.&nbsp;节日祝福短信</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <input type="radio" value="c" name="question4"><span>C.&nbsp;旅游、健身、娱乐邀请</span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <form>
+                    <div class="ta-testList">
+                        <div class="ta-titleDiv clearfix">
+                            <p>5、召开会议时，应严格控制（  ）。<span class="ta-trueKeyblank"></span></p>
+                            <!--<p class="colorRed">正确答案：工农革命</p>-->
+                        </div>
+                        <div class="ta-optionDiv row">
+                            <div class="col-xs-3">
+                                <input type="radio" value="a" name="question5"><span>A.&nbsp;会议时间、规模和经费</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <input type="radio" value="b" name="question5"><span>B.&nbsp;参会人员性别比例</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <input type="radio" value="c" name="question5"><span>C.会议场地绿化布置</span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <form>
+                    <div class="ta-testList">
+                        <div class="ta-titleDiv clearfix">
+                            <p>6、违反中央八项规定精神，情节严重的给予（  ）处分。<span class="ta-trueKeyblank"></span></p>
+                            <!--<p class="colorRed">正确答案：工农革命</p>-->
+                        </div>
+                        <div class="ta-optionDiv row">
+                            <div class="col-xs-3">
+                                <input type="radio" value="a" name="question6"><span>A.&nbsp;党内警告</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <input type="radio" value="b" name="question6"><span>B.&nbsp;记过</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <input type="radio" value="c" name="question6"><span>C.&nbsp;开除党籍</span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <form>
+                    <div class="ta-testList">
+                        <div class="ta-titleDiv clearfix">
+                            <p>7、基层调研应当（  ）。<span class="ta-trueKeyblank"></span></p>
+                            <!--<p class="colorRed">正确答案：工农革命</p>-->
+                        </div>
+                        <div class="ta-optionDiv row">
+                            <div class="col-xs-3">
+                                <input type="radio" value="a" name="question7"><span>A.&nbsp;提前安排好参观路线和汇报内容</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <input type="radio" value="b" name="question7"><span>B.&nbsp;轻车简从，不搞层层陪同</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <input type="radio" value="c" name="question7"><span>C.&nbsp;要求基层单位准备书面报告</span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <form>
+                    <div class="ta-testList">
+                        <div class="ta-titleDiv clearfix">
+                            <p>8、公务差旅报销中，严禁虚报（  ）。<span class="ta-trueKeyblank"></span></p>
+                            <!--<p class="colorRed">正确答案：工农革命</p>-->
+                        </div>
+                        <div class="ta-optionDiv row">
+                            <div class="col-xs-3">
+                                <input type="radio" value="a" name="question8"><span>A.&nbsp;城市间交通费</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <input type="radio" value="b" name="question8"><span>B.&nbsp;伙食补助费</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <input type="radio" value="c" name="question8"><span>C.&nbsp;以上都是</span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <form>
+                    <div class="ta-testList">
+                        <div class="ta-titleDiv clearfix">
+                            <p>9、违规发放津贴补贴属于违反（  ）行为。<span class="ta-trueKeyblank"></span></p>
+                            <!--<p class="colorRed">正确答案：工农革命</p>-->
+                        </div>
+                        <div class="ta-optionDiv row">
+                            <div class="col-xs-3">
+                                <input type="radio" value="a" name="question9"><span>A.&nbsp;廉洁纪律</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <input type="radio" value="b" name="question9"><span>B.&nbsp;组织纪律</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <input type="radio" value="c" name="question9"><span>C.&nbsp;群众纪律</span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <form>
+                    <div class="ta-testList">
+                        <div class="ta-titleDiv clearfix">
+                            <p>10、关于公务用车，下列说法正确的是（  ）。<span class="ta-trueKeyblank"></span></p>
+                            <!--<p class="colorRed">正确答案：工农革命</p>-->
+                        </div>
+                        <div class="ta-optionDiv row">
+                            <div class="col-xs-3">
+                                <input type="radio" value="a" name="question10"><span>A.&nbsp;领导干部可长期借用下属单位车辆</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <input type="radio" value="b" name="question10"><span>B.&nbsp;公车改革后可按标准领取补贴并使用私家车办公</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <input type="radio" value="c" name="question10"><span>C.&nbsp;公务用车需喷涂统一标识并安装定位系统</span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <br><br>
+                <a style="font-weight: bold;font-size: 20px">二、多选题</a>
+
+                <form>
+                    <div class="ta-testList">
+                        <div class="ta-titleDiv clearfix">
+                            <p>1、中央八项规定对改进调查研究提出的要求包括（  ）。<span class="ta-trueKeyblank"></span></p>
+                            <!--<p class="colorRed">正确答案：工农革命</p>-->
+                        </div>
+                        <div class="ta-optionDiv row">
+                            <div class="col-xs-3">
+                                <input type="checkbox" value="a" id="question111"><span>A.&nbsp;多到困难和矛盾集中、群众意见多的地方去</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <input type="checkbox" value="b" id="question112"><span>B.&nbsp;不张贴悬挂标语横幅，不安排群众迎送</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <input type="checkbox" value="c" id="question113"><span>C.&nbsp;不铺设迎宾地毯，不摆放花草</span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <form>
+                    <div class="ta-testList">
+                        <div class="ta-titleDiv clearfix">
+                            <p>2、以下属于违规公务接待行为的有（  ）。<span class="ta-trueKeyblank"></span></p>
+                            <!--<p class="colorRed">正确答案：工农革命</p>-->
+                        </div>
+                        <div class="ta-optionDiv row">
+                            <div class="col-xs-3">
+                                <input type="checkbox" value="a" id="question121"><span>A.&nbsp;超标准安排住宿</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <input type="checkbox" value="b" id="question122"><span>B.&nbsp;提供鱼翅、燕窝等高档菜肴</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <input type="checkbox" value="c" id="question123"><span>C.&nbsp;工作日午间饮酒</span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <form>
+                    <div class="ta-testList">
+                        <div class="ta-titleDiv clearfix">
+                            <p>3、关于办公用房管理，正确的是（  ）<span class="ta-trueKeyblank"></span></p>
+                            <!--<p class="colorRed">正确答案：工农革命</p>-->
+                        </div>
+                        <div class="ta-optionDiv row">
+                            <div class="col-xs-3">
+                                <input type="checkbox" value="a" id="question131"><span>A.&nbsp;领导干部办公室面积不得超过规定标准</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <input type="checkbox" value="b" id="question132"><span>B.&nbsp;闲置办公用房需统一清理调配</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <input type="checkbox" value="c" id="question133"><span>C.&nbsp;不得违规占用下属单位办公用房</span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <form>
+                    <div class="ta-testList">
+                        <div class="ta-titleDiv clearfix">
+                            <p>4、违反中央八项规定精神问题线索处置方式包括（  ）。<span class="ta-trueKeyblank"></span></p>
+                            <!--<p class="colorRed">正确答案：工农革命</p>-->
+                        </div>
+                        <div class="ta-optionDiv row">
+                            <div class="col-xs-3">
+                                <input type="checkbox" value="a" id="question141"><span>A.&nbsp;谈话函询</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <input type="checkbox" value="b" id="question142"><span>B.&nbsp;初步核实</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <input type="checkbox" value="c" id="question143"><span>C.&nbsp;暂存待查</span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <form>
+                    <div class="ta-testList">
+                        <div class="ta-titleDiv clearfix">
+                            <p>5、整治形式主义、官僚主义是落实八项规定的重要内容，以下属于形式主义表现的有（  ）。<span class="ta-trueKeyblank"></span></p>
+                            <!--<p class="colorRed">正确答案：工农革命</p>-->
+                        </div>
+                        <div class="ta-optionDiv row">
+                            <div class="col-xs-3">
+                                <input type="checkbox" value="a" id="question151"><span>A.&nbsp;以会议贯彻会议，以文件落实文件</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <input type="checkbox" value="b" id="question152"><span>B.&nbsp;调研“走过场”，不解决实际问题</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <input type="checkbox" value="c" id="question153"><span>C.&nbsp;工作重“痕迹”轻实效</span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <form>
+                    <div class="ta-testList">
+                        <div class="ta-titleDiv clearfix">
+                            <p>6、党员干部不得违规操办（  ）。<span class="ta-trueKeyblank"></span></p>
+                            <!--<p class="colorRed">正确答案：工农革命</p>-->
+                        </div>
+                        <div class="ta-optionDiv row">
+                            <div class="col-xs-3">
+                                <input type="checkbox" value="a" id="question161"><span>A.&nbsp;婚丧喜庆事宜借机敛财</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <input type="checkbox" value="b" id="question162"><span>B.&nbsp;子女升学宴、谢师宴</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <input type="checkbox" value="c" id="question163"><span>C.&nbsp;乔迁宴</span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <form>
+                    <div class="ta-testList">
+                        <div class="ta-titleDiv clearfix">
+                            <p>7、落实八项规定需强化监督执纪，监督方式包括（  ）。<span class="ta-trueKeyblank"></span></p>
+                            <!--<p class="colorRed">正确答案：工农革命</p>-->
+                        </div>
+                        <div class="ta-optionDiv row">
+                            <div class="col-xs-3">
+                                <input type="checkbox" value="a" id="question171"><span>A.&nbsp;日常监督检查</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <input type="checkbox" value="b" id="question172"><span>B.&nbsp;专项督查</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <input type="checkbox" value="c" id="question173"><span>C.&nbsp;群众举报</span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <form>
+                    <div class="ta-testList">
+                        <div class="ta-titleDiv clearfix">
+                            <p>8、违反八项规定的处理措施包括（  ）。<span class="ta-trueKeyblank"></span></p>
+                            <!--<p class="colorRed">正确答案：工农革命</p>-->
+                        </div>
+                        <div class="ta-optionDiv row">
+                            <div class="col-xs-3">
+                                <input type="checkbox" value="a" id="question181"><span>A.&nbsp;通报曝光</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <input type="checkbox" value="b" id="question182"><span>B.&nbsp;组织处理</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <input type="checkbox" value="c" id="question183"><span>C.&nbsp;党纪政务处分</span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+
+                <div class="fixed clearfix ta-fixdDiv">
+                    <!--               <p class="fl colorBlue">考试剩余时间：<span class="ta-lasttime">&lt;!&ndash;59分59秒&ndash;&gt;</span></p>-->
+                    <div class="fr">
+                        <a id="grade"></a>
+                        <span class="in-testbtn in-test" style="width: 80px" onclick="getRadioValue()">提交考试</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </form>
+
+</div>
+</body>
+</html>
